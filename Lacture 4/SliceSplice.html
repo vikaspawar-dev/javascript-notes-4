@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array Methods - JS</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #0f172a;
+      font-family: Arial, sans-serif;
+      color: #e2e8f0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #38bdf8;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    h2 {
+      color: #22c55e;
+    }
+
+    .code {
+      background-color: #020617;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: monospace;
+      color: #facc15;
+      display: block;
+      margin-top: 10px;
+      white-space: pre-line;
+    }
+
+    .result {
+      margin-top: 10px;
+      color: #f472b6;
+      font-weight: bold;
+    }
+
+    .highlight {
+      color: #a78bfa;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Array Methods in JavaScript</h1>
+
+    <!-- Slice -->
+    <div class="card">
+      <h2>Slice( )</h2>
+      <p><span class="highlight">Definition:</span> returns a piece of the array</p>
+
+      <span class="code">
+let arr = [10, 20, 30, 40, 50];
+
+let result = arr.slice(1, 4);
+
+console.log(result);
+      </span>
+
+      <div class="result">Output: [20, 30, 40]</div>
+    </div>
+
+    <!-- Splice -->
+    <div class="card">
+      <h2>Splice( )</h2>
+      <p><span class="highlight">Definition:</span> change original array</p>
+
+      <span class="code">
+let arr = [10, 20, 30, 40, 50];
+
+arr.splice(2, 2, 99, 100);
+
+console.log(arr);
+      </span>
+
+      <div class="result">Output: [10, 20, 99, 100, 50]</div>
+    </div>
+
+  </div>
+  <script src="SliceSplice.js"></script>
+
+</body>
+</html>

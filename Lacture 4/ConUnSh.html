@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Array Concat( ) Unshift(  ) shift( )  </title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #020617; /* darkest */
+        color: white;
+        padding: 30px;
+    }
+
+    .card {
+        background: #0f172a;
+        padding: 20px;
+        border-radius: 12px;
+        max-width: 700px;
+        margin: auto;
+        border-left: 5px solid #38bdf8;
+        box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+
+    h2 {
+        color: #38bdf8;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    code {
+        display: block;
+        background: #020617;
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 5px;
+        color: #4ade80;
+        font-size: 14px;
+    }
+
+    .concat { color: #a855f7; }
+    .unshift { color: #22c55e; }
+    .shift { color: #ef4444; }
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>Array </h2>
+
+    <ul>
+        <li class="concat">
+            Concat( ) : joins multiple arrays & returns result
+            <code>
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+
+let result = arr1.concat(arr2);
+// [1, 2, 3, 4]
+            </code>
+        </li>
+
+        <li class="unshift">
+            Unshift( ) : add to start
+            <code>
+let arr = [2, 3];
+arr.unshift(1);
+// [1, 2, 3]
+            </code>
+        </li>
+
+        <li class="shift">
+            Shift( ) : delete from start & return
+            <code>
+let arr = [1, 2, 3];
+arr.shift();
+// [2, 3]
+            </code>
+        </li>
+    </ul>
+</div>
+<script src="ConUnSh.js"></script>
+</body>
+</html>

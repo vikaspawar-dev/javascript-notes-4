@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f172a; /* dark blue */
+            color: #e2e8f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #38bdf8; /* sky blue */
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border-left: 6px solid;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+
+        .push {
+            border-color: #22c55e; /* green */
+        }
+
+        .pop {
+            border-color: #ef4444; /* red */
+        }
+
+        .tostring {
+            border-color: #f59e0b; /* orange */
+        }
+
+        h2 {
+            margin: 0 0 10px;
+        }
+
+        p {
+            margin: 5px 0;
+            color: #cbd5f5;
+        }
+
+        code {
+            display: block;
+            background: #020617;
+            color: #38bdf8;
+            padding: 10px;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Array Methods in JavaScript</h1>
+
+        <div class="card push">
+            <h2>Push( )</h2>
+            <p>Add element to end of array</p>
+            <code>
+let arr = [1, 2, 3];
+arr.push(4);
+// [1, 2, 3, 4]
+            </code>
+        </div>
+
+        <div class="card pop">
+            <h2>Pop( )</h2>
+            <p>Remove last element & return it</p>
+            <code>
+let arr = [1, 2, 3];
+arr.pop();
+// [1, 2]
+            </code>
+        </div>
+
+        <div class="card tostring">
+            <h2>toString( )</h2>
+            <p>Convert array into string</p>
+            <code>
+let arr = [1, 2, 3];
+arr.toString();
+// "1,2,3"
+            </code>
+        </div>
+
+    </div>
+<script src="ArrayMethod.js"></script>
+</body>
+</html>

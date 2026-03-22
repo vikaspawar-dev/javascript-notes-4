@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Notes - Chapter 4 (Arrays)</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
+        }
+
+        h1 {
+            text-align: center;
+            color: #facc15;
+            text-shadow: 0 0 10px #facc15;
+        }
+
+        .chapter {
+            background: linear-gradient(90deg, #3b82f6, #ec4899);
+            color: white;
+            padding: 10px 18px;
+            display: inline-block;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .card {
+            background-color: #0f172a;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border-left: 5px solid #f97316;
+        }
+
+        h2 {
+            color: #38bdf8;
+        }
+
+        p {
+            color: #e2e8f0;
+        }
+
+        pre {
+            background-color: #020617;
+            color: #4ade80;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #22c55e;
+        }
+
+        .highlight { color: #ef4444; }
+        .pink { color: #ec4899; }
+        .yellow { color: #facc15; }
+
+        .index-container {
+            display: flex;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .box {
+            background: linear-gradient(135deg, #ef4444, #f97316);
+            color: white;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            background: linear-gradient(90deg, #ec4899, #f97316);
+            color: white;
+            margin: 10px 0;
+        }
+
+        ul {
+            color: white;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .push { color: #22c55e; }
+        .pop { color: #ef4444; }
+        .tostring { color: #38bdf8; }
+    </style>
+</head>
+
+<body>
+
+    <h1>🚀 JavaScript Notes 4</h1>
+    <div class="chapter">🔥 Chapter 4 - Arrays</div>
+
+    <div class="card">
+        <h2>Arrays in JavaScript</h2>
+        <p>
+            Arrays are <span class="highlight">collections of items</span>. 
+            They are used to store <span class="yellow">multiple values</span>.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Create Array</h2>
+        <pre>
+let heroes = ["ironman", "hulk", "thor", "batman"];
+let marks = [96, 75, 48, 83, 66];
+let info = ["rahul", 86, "Delhi"];
+        </pre>
+    </div>
+
+    <div class="card">
+        <h2>Explanation</h2>
+        <p>
+            ➤ heroes → String values<br><br>
+            ➤ marks → Number values<br><br>
+            ➤ info → Mixed values
+        </p>
+        <a href="ArrayJs.html" class="btn">Arrays Collection</a>
+    </div>
+
+    <div class="card">
+        <h2>Array Indices</h2>
+        <p>arr[0], arr[1], arr[2]</p>
+
+        <div class="index-container">
+            <div class="box">0</div>
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+        <br>
+        <a href="IndicesJs.html" class="btn">Array Indices JS</a>
+    </div>
+
+    <div class="card">
+        <h2>Let’s Practice</h2>
+        <p><i>
+        Qs.1 → [85, 97, 44, 37, 76, 60]<br><br>
+        Qs.2 → [250, 645, 300, 900, 50] (10% OFF)
+        </i></p>
+        <a href="LetsPracticeQs1.html" class="btn">
+        Let’s Practice Qs Ans
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>Array Methods</h2>
+        <ul>
+            <li class="push">push( ) : add to end</li>
+            <li class="pop">pop( ) : delete from end & return</li>
+            <li class="tostring">toString( ) : converts array to string</li>
+        </ul>
+        <a href="ArrayMethod.html" class="btn">
+        Push(), Pop(), toString()
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>Array Methods</h2>
+        <ul>
+            <li style="color:#a855f7;">Concat( ) : joins multiple arrays & returns result</li>
+            <li style="color:#22c55e;">Unshift( ) : add to start</li>
+            <li style="color:#ef4444;">shift( ) : delete from start & return</li>
+        </ul>
+        <a href="ConUnSh.html" class="btn">concat(), unshift(), shift()</a>
+    </div>
+
+    <div class="card">
+        <h2>Array Methods</h2>
+        <ul>
+            <li style="color:#38bdf8;">Slice( ) : returns a piece of the array</li>
+            <li style="color:#ef4444;">Splice( ) : change original array (add, remove, replace)</li>
+        </ul>
+
+        <br>
+
+        <p style="color:#facc15; font-weight:bold;">
+            slice( startIdx, endIdx )
+        </p>
+
+        <p style="color:#22c55e; font-weight:bold;">
+            splice( startIdx, delCount, newEl1... )
+        </p>
+
+        <a href="SliceSplice.html" class="btn">
+        slice( startIdx, endIdx ) splice( startIdx, delCount, newEl1... )
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>Let’s Practice (Companies)</h2>
+
+        <p><i>
+            Qs. Create an array to store companies -> 
+            "Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"
+            <br><br>
+            a. Remove the first company from the array
+            <br><br>
+            b. Remove Uber & Add Ola in its place
+            <br><br>
+            c. Add Amazon at the end
+        </i></p>
+
+        <pre>
+let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+
+companies.shift();
+companies.splice(1, 1, "Ola");
+companies.push("Amazon");
+
+console.log(companies);
+        </pre>
+
+        <a href="LetsPracticeQs2.html" class="btn">
+        Let’s Practice QS.
+        </a>
+    </div>
+
+</body>
+</html>

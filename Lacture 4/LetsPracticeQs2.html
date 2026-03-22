@@ -1,0 +1,96 @@
+<!-- Let‘s Practice -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array Practice - Companies</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #0f172a;
+      font-family: Arial, sans-serif;
+      color: #e2e8f0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #38bdf8;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    h2 {
+      color: #22c55e;
+    }
+
+    .code {
+      background-color: #020617;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: monospace;
+      color: #facc15;
+      display: block;
+      margin-top: 10px;
+      white-space: pre-line;
+    }
+
+    .result {
+      margin-top: 10px;
+      color: #f472b6;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Array Practice - Companies</h1>
+
+    <div class="card">
+      <h2>Question</h2>
+      <p>Create an array to store companies:</p>
+      <p>Bloomberg, Microsoft, Uber, Google, IBM, Netflix</p>
+    </div>
+
+    <div class="card">
+      <h2>Solution</h2>
+
+      <span class="code">
+let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+
+// a. Remove first company
+companies.shift();
+
+// b. Remove Uber & add Ola
+companies.splice(1, 1, "Ola");
+
+// c. Add Amazon at the end
+companies.push("Amazon");
+
+console.log(companies);
+      </span>
+
+      <div class="result">
+        Final Output: ["Microsoft", "Ola", "Google", "IBM", "Netflix", "Amazon"]
+      </div>
+    </div>
+
+  </div>
+<script src="Let’s PracticeQs2.js"></script>
+</body>
+</html>
